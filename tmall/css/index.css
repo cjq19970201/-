@@ -1,0 +1,49 @@
+    /*index.html的样式*/
+    /*header 开始*/
+    #header{
+        height: 32px;/*垂直居中*/
+        /*width: 1903px;*/
+        background:#f2f2f2;
+        font-size: 12px;
+        line-height: 32px;/*垂直居中*/
+    }#login-info{
+        float: left;
+     }
+     #sn-quick-menu{
+         float: right;
+         /*position: relative;*/
+     }
+    #sn-quick-menu .menu{
+        float: left;
+        position: relative;
+    }
+    #header a,span {
+        color: #999;
+        padding: 0 14px;
+    }
+    #header a:hover{
+        color: #FF0036;
+    }
+    #header .transparent::after{
+        content: '';
+        border-width: 3px;
+        border-style: solid;
+        border-top-color: #000000;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        width: 0;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        margin-top: -1px;
+    }
+    #header .iconfont{
+        font-size: 12px;
+        color:#FF0036;
+        position: absolute;
+        left: -1px;
+        top: 50%;
+        margin-top: -15px;
+
+    }

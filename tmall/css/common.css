@@ -1,0 +1,28 @@
+   /*通用的样式*/
+   /*样式重置*/
+   *{
+       margin: 0;
+       padding: 0;
+   }
+   /*  *通配符  */
+   body{
+       margin: 0;
+   }
+   li{
+       list-style: none;
+   }
+   a{
+       text-decoration: none;
+
+   }
+   .wrapper{
+       width: 1230px;
+       height: 100%;
+       margin: 0 auto;
+       background: #f2f2f2;
+   }
+
+
+
+    /*head开始*/
+    /*head结束*/
