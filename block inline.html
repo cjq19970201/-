@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #block1{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+            display:inline;
+        }
+        #inline{
+            width: 200px;
+            height: 200px;
+            background: #00ff00;
+            display: block;
+        }
+        .aa{
+            width: 200px;
+            height: 200px;
+            background: #cccccc;
+            display: inline-block;
+        }
+        #pic1{
+            width: 200px;
+            height: 200px;
+        }
+        body{height: 3000px;
+
+        }
+        #ta{
+            resize: none;
+        }
+        #username{
+            width: 120px;
+            height: 30px;
+            outline: none;
+        }
+     </style>
+</head>
+<body>
+    <div id="block1">块级</div>
+    <span id="inline">行级</span>
+    <div class="aa">div1</div>
+    <div class="aa">div2</div>
+    <div class="aa">div3</div>
+    <img src="timg.jpg" alt="" id="pic1">
+    <img src="timg.jpg" alt="" >
+    <form action="">
+        <label for="username">用户名：</label>
+        <input type="text" id="username">
+        <br>
+        <label for="pwd">密码：</label>
+        <input type="text" id="pwd">
+        <br>
+            性别：
+            <input type="radio" name="sex">男
+            <input type="radio" name="sex">女
+        <br>
+            爱好：
+        <input type="checkbox" name="hobby">电脑
+        <input type="checkbox" name="hobby">足球
+        <input type="checkbox" name="hobby">小说
+        <br>
+        <select name="" id="">
+            <option value="">哈尔滨</option>
+            <option value="">大庆</option>
+            <option value="">齐齐哈尔</option>
+        </select>
+        <br>
+            备注：
+        <textarea name="" id="ta" cols="30" rows="10"></textarea>
+            <input type="submit" value="注册">
+            <input type="reset" value="重置">
+    </form>
+</body>
+</html>
+<!--
+块级元素block：独自占一行  可以设置宽高 h li ol ul table
+行级元素inline：行级元素和行级元素会在一行显示  不能设置宽高   margin只能设置左右不能设置上下 a span
+行块级元素：img input
+
+行级 -> 块级 : display: block:
+块级 -> 行级 : display: inline
+display: inline-block  不支持ie 6  7 8
+br是换行
+
+
+
+
+
+
+-->

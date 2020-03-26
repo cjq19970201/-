@@ -2,33 +2,59 @@
     /*header 开始*/
     #header{
         height: 32px;/*垂直居中*/
-        /*width: 1903px;*/
         background:#f2f2f2;
         font-size: 12px;
         line-height: 32px;/*垂直居中*/
-    }#login-info{
-        float: left;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    #login-info{
+                float: left;
+                position: relative;
+
      }
+    #login-info .menu{
+        padding: 0 14px 0 14px;
+    }
      #sn-quick-menu{
          float: right;
-         /*position: relative;*/
+         position: relative;
+
+     }
+     #sn-quick-menu.shopping{
+         padding-left: -14px;
      }
     #sn-quick-menu .menu{
         float: left;
         position: relative;
-    }
-    #header a,span {
         color: #999;
-        padding: 0 14px;
+        padding:0 14px 0 14px;
+        height: 33px;
+    }
+
+    #header.shopping{
+        padding:0 10px 0 1px;
+    }
+    #sn-quick-menu.segmentation{
+        width: 1px;
+        height: 14px;
+        background: #ccc;
+        padding: 0;
+        margin-top: 9px;
+    }
+    #header span{
+        color: #999;
+    }
+    #header a {
+        color: #999;
     }
     #header a:hover{
         color: #FF0036;
     }
-    #header .transparent::after{
+    #header .triangle::after{
         content: '';
         border-width: 3px;
         border-style: solid;
-        border-top-color: #000000;
+        border-top-color: #bbb;
         border-bottom-color: transparent;
         border-left-color: transparent;
         border-right-color: transparent;
@@ -37,6 +63,14 @@
         right: 5px;
         top: 50%;
         margin-top: -1px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+        transform-origin: 3px 1.5px;
+        /*旋转原点*/
+
     }
     #header .iconfont{
         font-size: 12px;
@@ -44,6 +78,62 @@
         position: absolute;
         left: -1px;
         top: 50%;
-        margin-top: -15px;
+        margin-top: -17px;
 
     }
+    #header #sn-quick-menu .shopping{
+        margin-left: 28px;
+    }
+    #header #sn-quick-menu .website{
+        margin-left: 14px;
+    }
+
+    #login-info .register {
+        padding: 0;
+    }
+    #header .triangle:hover::after{
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+
+        -webkit-transition: transform .5s ease;
+        -moz-transition: transform .5s ease;
+        -ms-transition: transform .5s ease;
+        -o-transition: transform .5s ease;
+        transition: transform .5s ease;
+    }
+    #header .triangle:hover{
+        background: #fff;
+        border-color: #e5e5e5;
+    }
+    #header .triangle{
+        border-style: solid;
+        border-color: transparent;
+        border-width: 0 1px 0 1px;
+    }
+    #header .triangle:hover>a{
+        text-decoration: underline;
+        color: #FF0036;
+    }
+    #header .triangle:hover .submenu{
+        display: block;
+    }
+    #header .submenu a:hover{
+        text-decoration: underline;
+    }
+    #sn-quick-menu .submenu{
+        float: none;
+        top: 32px;
+        left: -1px;
+        position: absolute;
+        width: 84px;
+        border-style: solid;
+        border-color: #e5e5e5;
+        border-width: 0 1px 1px 1px ;
+        padding-left: 14px;
+        display: none;
+
+    }
+

@@ -7,28 +7,35 @@
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/iconfont.css">
+        <link rel="stylesheet" href="css/phone.css">
     </head>
     <body>
         <div id="header">
             <div class="wrapper">
                 <p id="login-info">
-                <span>喵,欢迎来到 天猫</span>
-                <a href="">请登录</a>
-                <a href="">免费注册</a>
+                <span class="menu">喵,欢迎来到天猫</span>
+                <a href="" class="menu">请登录</a>
+                <a href="" class="register  menu">免费注册</a>
                 </p>
                 <ul id="sn-quick-menu">
-                <li class="menu transparent">
+                <li class="menu triangle">
                     <a href="">我的淘宝</a>
+                    <ul class="submenu">
+                        <li><a href="">已买到的宝贝</a></li>
+                        <li><a href="">已卖出的宝贝</a></li>
+                    </ul>
                     <!--<div class="transparent"></div>-->
                 </li>
-                <li class="menu">
+                <li class="menu shopping">
                     <i class="iconfont iconziyuan"></i>
                     <a href="">购物车0件</a>
                 </li>
-                <li class="menu transparent">
+                <li class="menu triangle">
                     <a href="">收藏夹</a>
                 </li>
+                    <li class="menu segmentation"></li>
                 <li class="menu">
+                    <i class="iconfont iconshouji"></i>
                     <a href="">手机版</a>
                 </li>
                 <li class="menu">
@@ -37,7 +44,8 @@
                 <li class="menu">
                     <a href="">商家支持</a>
                 </li>
-                <li class="menu transparent">
+                <li class="menu triangle website">
+                    <i class="iconfont icondaohang"></i>
                     <a href="">网站导航</a>
                 </li>
             </ul>

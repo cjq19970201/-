@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            border: 1px dashed;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+       /*     -webkit-transition: transition 1s linear, background 1s linear;
+            -moz-transition: transition 1s linear, background 1s;
+            -ms-transition: transition 1s linear, background 1s;
+            -o-transition: transition 1s linear, background 1s;*/
+           /* transition: transform 1s linear, background 1s linear;*/
+            transition: all 1s linear, background 1s linear;
+        }
+        /*旋转*/
+        #div2:hover{
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+            transform: rotate(30deg);
+            background: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">初</div>
+    </div>
+
+</body>
+</html>
